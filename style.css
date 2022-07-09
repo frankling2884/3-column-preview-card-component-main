@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright__orange: hsl(31, 77%, 52%);
+    --Dark__cyan: hsl(184, 100%, 22%);
+    --Verydar__cyan: hsl(179, 100%, 13%);
+    --Transparent__white: hsla(0, 0%, 100%, 0.596);
+    --Verylight__gray : hsl(0, 0%, 95%);
+
+}
+body{
+    background:var(--Verylight__gray) ;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card__container{
+width: 330px;
+display: flex;
+flex-wrap: wrap;
+border-radius: 10px;
+overflow: hidden;
+
+
+}
+.contenido{
+    padding: 2.5em;
+}
+.card__container h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--Verylight__gray);
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+.card__container p{
+    color: var(--Transparent__white);
+    line-height:1.5em;
+    margin-right: 0.4em;
+}
+.card__container a{
+    background: var(--Verylight__gray);
+    display: block;
+    width: 130px;
+    padding: 10px 20px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.sedans{
+    background: var(--Bright__orange);
+}
+.SUVs{
+    background:var(--Dark__cyan);
+}
+.Luxury{
+    background: var(--Verydar__cyan);
+}
+.sedans a{
+    color: var(--Bright__orange);
+}
+.sedans a:hover{
+    background: var(--Bright__orange);
+    color: var(--Verylight__gray);
+    outline: 1px solid var(--Verylight__gray);
+}
+.SUVs a{
+    color: var(--Dark__cyan);
+}
+.SUVs a:hover{
+    background: var(--Dark__cyan);
+    color: var(--Verylight__gray);
+    outline: 1px solid var(--Verylight__gray);
+}
+.Luxury a{
+    color: var(--Verydar__cyan);
+}
+.Luxury a:hover{
+    background: var(--Verydar__cyan);
+    color: var(--Verylight__gray);
+    outline: 1px solid var(--Verylight__gray);
+}
+@media (min-width:960px) {
+  
+ 
+    .card__container{
+        width: 940px;
+        flex-wrap: nowrap;
+        margin-top: 130px;
+    }
+    .card__container a{
+        margin-top: 60px;
+    }
+}
+.attribution { 
+    
+    font-size: 11px; text-align: center; 
+   
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
